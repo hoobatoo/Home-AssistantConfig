@@ -1,0 +1,60 @@
+- action:
+  - alias: Switch_1_On
+    data:
+      entity_id: switch.switch_1_switch
+    service: switch.turn_on
+  alias: Switch 1 On
+  condition: []
+  id: '1506796544709'
+  trigger:
+  - event: sunset
+    offset: -00:30:00
+    platform: sun
+- action:
+  - alias: switch1_off
+    data:
+      entity_id: switch.switch_1_switch
+    service: switch.turn_off
+  alias: Switch 1 Off
+  condition: []
+  id: '1506796786347'
+  trigger:
+  - event: sunset
+    offset: +05:00:00
+    platform: sun
+- action:
+  - alias: 0540setheat
+    data:
+      entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+      temperature: 72
+    service: climate.set_temperature
+  alias: 0605 Set Heat
+  condition: []
+  id: '1509510002554'
+  trigger:
+  - at: 06:05
+    platform: time
+- action:
+  - alias: 0710setheat
+    data:
+      entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+      temperature: 70
+    service: climate.set_temperature
+  alias: 0710 Set Heat
+  condition: []
+  id: '1509510088234'
+  trigger:
+  - at: 07:10
+    platform: time
+- action:
+  - alias: 2100setheat
+    data:
+      entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+      temperature: 67
+    service: climate.set_temperature
+  alias: 2100 Set Heat
+  condition: []
+  id: '1509510192648'
+  trigger:
+  - at: '21:00'
+    platform: time

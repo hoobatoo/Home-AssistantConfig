@@ -1,0 +1,20 @@
+network:
+  name: Net Stats
+  view: no
+  entities:
+  - sensor.ssl_cert_expiry 
+  - sensor.pihole_ads_blocked_today
+  - sensor.pihole_ads_percentage_blocked_today
+  - sensor.pihole_dns_queries_today
+  - sensor.pihole_domains_blocked
+  - sensor.received_enxb827eb7dc7a1
+  - sensor.sent_enxb827eb7dc7a1
+  - sensor.speedtest_download
+  - sensor.speedtest_ping
+  - sensor.speedtest_upload
+
+net_view:
+  name: Network
+  view: yes
+  entities:
+  - group.network

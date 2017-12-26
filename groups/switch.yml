@@ -1,0 +1,19 @@
+switches:
+  Name: Z-Wave Switches
+  view: yes 
+  entities:
+  - sensor.switch_1_energy, 
+  - sensor.switch_1_exporting, 
+  - sensor.switch_1_interval, 
+  - sensor.switch_1_power, 
+  - sensor.switch_1_power_2, 
+  - sensor.switch_1_previous_reading, 
+  - sensor.switch_1_previous_reading_2, 
+  - sensor.switch_2_energy, 
+  - sensor.switch_2_exporting, 
+  - sensor.switch_2_interval, 
+  - sensor.switch_2_interval_2, 
+  - sensor.switch_2_power, 
+  - sensor.switch_2_power_2, 
+  - sensor.switch_2_previous_reading, 
+  - sensor.switch_2_previous_reading_2

@@ -1,0 +1,21 @@
+exterior_climate:
+  name: Weather
+  entities:
+  - sensor.dark_sky_icon
+  - sensor.dark_sky_nearest_storm_distance
+  - sensor.dark_sky_summary
+  - sensor.dark_sky_daily_high_temperature
+  - sensor.dark_sky_daily_low_temperature
+  - sensor.dark_sky_humidity
+  - sensor.dark_sky_pressure
+  - sensor.dark_sky_temperature
+  - sensor.dark_sky_visibility
+
+interior_climate:
+  name: Inside climate
+  view: no
+  entities:
+  - climate.2gig_technologies_ct101_thermostat_iris_cooling_1
+  - climate.2gig_technologies_ct101_thermostat_iris_heating_1
+  - zwave.2gig_technologies_ct101_thermostat_iris
+  

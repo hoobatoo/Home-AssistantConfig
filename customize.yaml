@@ -1,0 +1,4 @@
+group.all_devices:
+  order: 9
+device_tracker.33647l:
+  hidden: true

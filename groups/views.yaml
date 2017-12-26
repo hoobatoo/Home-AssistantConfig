@@ -1,0 +1,42 @@
+#default_view:
+#  view: yes
+#  entities:
+#  - sensor.2gig_technologies_ct101_thermostat_iris_temperature
+#  - sensor.entryway_thermostat_humidity
+#  - group.interior_climate
+#  - group.exterior_climate
+
+device_view:
+  name: Devices
+  view: yes
+  entities:
+  - group.all_devices2
+
+maps:
+  name: Maps
+  view: yes
+  entities:
+    
+
+media:
+  name: A/V
+  view: yes
+  entities:
+    - media_player.apple_tv
+    - media_player.plex_web_chrome
+    
+
+status:
+  name: Status
+  view: yes
+  entities:
+    #- group.batteries
+    #- group.signal
+
+hvac:
+  name: HVAC
+  view: yes
+  entities:
+  - climate.2gig_technologies_ct101_thermostat_iris_cooling_1
+  - climate.2gig_technologies_ct101_thermostat_iris_heating_1
+  - zwave.2gig_technologies_ct101_thermostat_iris
